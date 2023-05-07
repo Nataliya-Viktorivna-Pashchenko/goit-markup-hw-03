@@ -40,6 +40,7 @@ body {
   --accent-color-text: #4d5ae5;
   --background-color: #ffffff;
   --color-text-contact: #434455;
+  --border-button: #e7e9fc;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -72,6 +73,7 @@ body {
 
 /* Logo*/
 .logotype {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -89,24 +91,25 @@ body {
   color: #f4f4fd;
 }
 /*Header*/
+.main-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #e7e9fc;
 }
 .navigation {
   display: flex;
-  column-gap: 76px;
+  align-items: center;
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .menu-link {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -121,7 +124,7 @@ body {
 .contact-list {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 .menu-contacts-item {
   font-style: normal;
@@ -173,6 +176,7 @@ body {
 }
 .hero {
   width: 1400px;
+  margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -180,14 +184,14 @@ body {
 }
 
 /*-------Advantages---------*/
-.adv-container {
+.advantages {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .adv-list {
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 .adv-item {
   width: 264px;
@@ -195,14 +199,19 @@ body {
 }
 
 /*------What are we doing---------*/
+.projects {
+  padding-bottom: 120px;
+}
 .project-list {
   display: flex;
   align-items: center;
-  margin-bottom: 120px;
-  column-gap: 24px;
+  gap: 24px;
 }
 .project-title {
   margin-bottom: 72px;
+}
+.project-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /*------Our team-------*/
@@ -210,32 +219,40 @@ body {
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 120px;
+  padding: 120px 0;
   padding-bottom: 128px;
   background-color: #f4f4fd;
 }
+.section-title {
+  margin-bottom: 72px;
+}
 .our-team-item {
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+.name-prof {
+  padding: 32px 16px;
 }
 .team-list {
   display: flex;
   align-items: center;
-  margin-top: 72px;
-  column-gap: 24px;
+  gap: 24px;
 }
 .name {
-  margin-top: 32px;
   text-align: center;
+  margin-bottom: 8px;
 }
 .profession {
-  margin-bottom: 32px;
   text-align: center;
 }
 /*---------Portfolio filter button---------*/
+.section-button {
+  padding: 96px 0 120px;
+}
 .button-container {
   width: 1400px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  /*padding-top: 96px;*/
+  /*padding-bottom: 72px;*/
 }
 
 .filter-button {
@@ -246,7 +263,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: 0;
+  border: 1px solid var(--border-button);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -255,6 +273,7 @@ body {
 }
 .filter-button:hover,
 .filter-button:focus {
+  border: 1px solid transparent;
   color: #ffffff;
   background-color: #404bbf;
 }
@@ -262,12 +281,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 24px;
+  margin-bottom: 72px;
+  gap: 24px;
 }
 /*------Portfolio Works----------*/
 .work-item {
   box-sizing: border-box;
-  width: 360px;
+  width: calc((100% - 48px) / 3);
+  /*width: 360px;*/
   height: 420px;
   /*margin-top: 48px;*/
   border: 1px solid #e7e9fc;
@@ -276,19 +297,14 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
+  row-gap: 48px;
   margin-bottom: 120px;
 }
-.works-list :nth-child(n + 4) {
-  margin-top: 48px;
-}
-.name-work {
-  margin-top: 32px;
-  margin-left: 16px;
-}
-.type-work {
-  margin-left: 16px;
-  margin-bottom: 32px;
+.appl-category {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 /*-------Footer--------*/
 .underside {
@@ -299,11 +315,16 @@ body {
   background-color: #2e2f42;
 }
 .underside-desc {
-  width: 264px;
+  max-width: 264px;
+  /*width: 264px;*/
   margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.lower-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
