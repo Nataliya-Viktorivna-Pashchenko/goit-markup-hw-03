@@ -285,6 +285,7 @@ body {
 /*------Portfolio Works----------*/
 
 .works-list {
+  width: 1400px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -292,12 +293,8 @@ body {
   row-gap: 48px;
   margin-bottom: 120px;
 }
-.work-item {
+.work-link {
   width: calc((100% - 48px) / 3);
-  /*box-sizing: border-box;
-  /*width: 360px;*/
-  height: 420px;
-  border: 1px solid #e7e9fc;
 }
 .appl-category {
   padding: 32px 16px;
