@@ -15,7 +15,8 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  /*padding-left: 0;*/
+  padding: 0;
 }
 button {
   cursor: pointer;
@@ -247,11 +248,6 @@ body {
 .section-button {
   padding: 96px 0 120px;
 }
-.button-container {
-  width: 1400px;
-  /*padding-top: 96px;*/
-  /*padding-bottom: 72px;*/
-}
 
 .filter-button {
   height: 48px;
@@ -285,7 +281,6 @@ body {
 /*------Portfolio Works----------*/
 
 .works-list {
-  width: 1400px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -294,9 +289,6 @@ body {
   margin-bottom: 120px;
 }
 .work-item {
-  width: calc((100% - 48px) / 3);
-}
-.work-link {
   width: calc((100% - 48px) / 3);
 }
 .appl-category {
