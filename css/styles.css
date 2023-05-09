@@ -15,7 +15,6 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
-  /*padding-left: 0;*/
   padding: 0;
 }
 button {
@@ -45,7 +44,7 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .section-title {
   font-weight: 700;
@@ -175,7 +174,6 @@ body {
   color: #ffffff;
 }
 .hero {
-  width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
@@ -286,7 +284,6 @@ body {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
 }
 .work-item {
   width: calc((100% - 48px) / 3);
@@ -298,13 +295,11 @@ body {
 }
 /*-------Footer--------*/
 .underside {
-  width: 1400px;
   padding: 100px 0;
   background-color: #2e2f42;
 }
 .underside-desc {
   max-width: 264px;
-  /*width: 264px;*/
   margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
